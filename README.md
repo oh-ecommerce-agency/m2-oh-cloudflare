@@ -10,5 +10,7 @@ Steps to configure
 2) Complete Authentication email and key and **save**
 3) After page reload, select zones to purge cache
 
-
 **Get Auth key from https://dash.cloudflare.com/profile > API Tokens > Global API Key**
+
+Module installation <br />
+`composer require m2-oh/cloudflare`
