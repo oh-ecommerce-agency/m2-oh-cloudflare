@@ -1,7 +1,8 @@
-## Automatically purge Cloudflare cache after:
+## Cloudflare Helper for Magento 2:
 - Flush Cache
 - Flush Cache Storage
 - Flush JavaScript/CSS Cache
+- Get IP directly from Cloudflare header HTTP_CF_CONNECTING_IP
 
 **Works also for CLI**
 
