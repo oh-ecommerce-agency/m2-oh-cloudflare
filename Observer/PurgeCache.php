@@ -50,16 +50,14 @@ class PurgeCache implements ObserverInterface
     {
         if ($this->validateConfig()) {
             $failed = 0;
-            $errors = [];
 
             foreach ($this->client->purgeAllCache() as $res) {
-                if (!$res['success']) {
+                if (!$res) {
                     $failed++;
-                    $errors[] = $res['errors'];
                 }
             }
 
-            if ($failed && $errors) {
+            if ($failed) {
                 $this->messageManager->addErrorMessage('Error purging Cloudflare cache');
                 return;
             }

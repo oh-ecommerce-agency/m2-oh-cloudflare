@@ -1,11 +1,12 @@
 {
-  "name": "m2-oh/cloudflare",
-  "description": "Magento 2 Cloudflare Helper Module",
+  "name": "m2-oh/module-cloudflare",
+  "description": "N/A",
   "type": "magento2-module",
   "require": {
-    "php": "~7.3.0||~7.4.0",
+    "php": ">=7.4",
     "magento/framework": "*",
-    "m2-oh/core": "*"
+    "m2-oh/module-core": "*",
+    "cloudflare/sdk": "^1.3"
   },
   "license": [
     "OSL-3.0"
