@@ -14,4 +14,4 @@ Steps to configure
 **Get Auth key from https://dash.cloudflare.com/profile > API Tokens > Global API Key**
 
 Module installation <br />
-`composer require m2-oh/cloudflare`
+`composer require m2-oh/module-cloudflare`
