@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="OH_Cloudflare::title"
+             title="Cloudflare"
+             module="OH_Cloudflare"
+             sortOrder="10"
+             parent="OH_Core::oh"
+             translate="title"
+             resource="OH_Cloudflare::setting"
+        />
+
+        <add id="OH_Cloudflare::settings"
+             title="Settings"
+             module="OH_Cloudflare"
+             sortOrder="10"
+             translate="title"
+             parent="OH_Cloudflare::title"
+             resource="OH_Cloudflare::setting"
+             action="adminhtml/system_config/edit/section/oh_cloudflare"
+        />
+    </menu>
+</config>

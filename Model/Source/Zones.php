@@ -32,11 +32,15 @@ class Zones extends AbstractSource implements OptionSourceInterface
             return $this->options;
         }
 
-        foreach ($this->client->getZones() as $zone) {
-            $this->options[] = [
-                'label' => $zone['name'],
-                'value' => $zone['id'],
-            ];
+        $zones = $this->client->getZones();
+
+        if (count($zones)) {
+            foreach ($zones as $zone) {
+                $this->options[] = [
+                    'label' => $zone['name'],
+                    'value' => $zone['id'],
+                ];
+            }
         }
 
         return $this->options;
